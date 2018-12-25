@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scratch", "Scratch\Scratch.csproj", "{51565BE3-294B-45D6-B234-9C9E127191BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSFtp", "CSFtp\CSFtp.csproj", "{28DBB6AE-2748-412A-A386-65135F5BE34C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSFTPMain", "CSFTPMain", "{AD095181-6444-4D81-B699-8A7D796B3988}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +19,15 @@ Global
 		{51565BE3-294B-45D6-B234-9C9E127191BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51565BE3-294B-45D6-B234-9C9E127191BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51565BE3-294B-45D6-B234-9C9E127191BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28DBB6AE-2748-412A-A386-65135F5BE34C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28DBB6AE-2748-412A-A386-65135F5BE34C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28DBB6AE-2748-412A-A386-65135F5BE34C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28DBB6AE-2748-412A-A386-65135F5BE34C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{28DBB6AE-2748-412A-A386-65135F5BE34C} = {AD095181-6444-4D81-B699-8A7D796B3988}
 	EndGlobalSection
 EndGlobal
