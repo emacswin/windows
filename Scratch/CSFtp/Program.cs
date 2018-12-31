@@ -33,6 +33,9 @@ namespace CSFtp
 
             p.ftpCommand(sMessage);
 
+            sMessage = "LIST .\r\n";
+
+            p.ftpCommand(sMessage);
         }
 
         public void ftpCommand(string sMessage)

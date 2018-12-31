@@ -42,6 +42,7 @@ namespace Assemblies.Ftp
             AddCommand(new FtpCommands.UserCommandHandler(this));
             AddCommand(new FtpCommands.PasswordCommandHandler(this));
             AddCommand(new FtpCommands.PwdCommandHandler(this));
+            AddCommand(new FtpCommands.ListCommandHandler(this));
         }
 
         private void AddCommand(FtpCommands.FtpCommandHandler handler)

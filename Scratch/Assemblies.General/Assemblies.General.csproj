@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArrayHelpers.cs" />
     <Compile Include="LoadedClass.cs" />
     <Compile Include="SocketHelpers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
