@@ -52,7 +52,8 @@ namespace Assemblies.Ftp
 
             AddCommand(new FtpCommands.NlstCommandHandler(this));
             AddCommand(new FtpCommands.NoopCommandHandler(this));
-
+            AddCommand(new FtpCommands.QuitCommandHandler(this));
+            AddCommand(new FtpCommands.SizeCommandHandler(this));
         }
 
         private void AddCommand(FtpCommands.FtpCommandHandler handler)

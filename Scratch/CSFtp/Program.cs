@@ -37,6 +37,9 @@ namespace CSFtp
 
             p.ftpCommand(sMessage);
 
+            sMessage = "SIZE VTK20096952.msg\r\n";
+            p.ftpCommand(sMessage);
+
             sMessage = "CWD test\r\n";
             p.ftpCommand(sMessage);
 
@@ -44,6 +47,9 @@ namespace CSFtp
             p.ftpCommand(sMessage);
 
             sMessage = "RMD subdir\r\n";
+            p.ftpCommand(sMessage);
+
+            sMessage = "QUIT\r\n";
             p.ftpCommand(sMessage);
         }
 
