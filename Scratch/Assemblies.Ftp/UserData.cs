@@ -113,7 +113,10 @@ namespace Assemblies.Ftp
 
         public void AddUser(string sUser)
         {
-            m_mapUserToData.Add(sUser, new UserDataItem());
+            if (GetUserItem(sUser) == null)
+            {
+                m_mapUserToData.Add(sUser, new UserDataItem());
+            }
         }
 
         public void RemoveUser(string sUser)

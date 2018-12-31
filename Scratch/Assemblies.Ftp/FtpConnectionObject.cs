@@ -24,9 +24,23 @@ namespace Assemblies.Ftp
             LoadCommands();
         }
 
+        public bool Login(string sPassword)
+        {
+            FileSystem.IFileSystem fileSystem = m_fileSystemClassFactory.Create(this.User, sPassword);
+
+            if (fileSystem == null)
+            {
+                return false;
+            }
+
+            SetFileSystemObject(fileSystem);
+            return true;
+        }
+
         private void LoadCommands()
         {
             AddCommand(new FtpCommands.UserCommandHandler(this));
+            AddCommand(new FtpCommands.PasswordCommandHandler(this));
         }
 
         private void AddCommand(FtpCommands.FtpCommandHandler handler)
