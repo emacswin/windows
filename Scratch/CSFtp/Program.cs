@@ -36,6 +36,10 @@ namespace CSFtp
             sMessage = "LIST .\r\n";
 
             p.ftpCommand(sMessage);
+
+            sMessage = "CWD test\r\n";
+
+            p.ftpCommand(sMessage);
         }
 
         public void ftpCommand(string sMessage)

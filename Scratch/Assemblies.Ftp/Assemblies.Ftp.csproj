@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CwdCommandHandler.cs" />
     <Compile Include="FtpCommandHandler.cs" />
     <Compile Include="FtpConnectionData.cs" />
     <Compile Include="FtpConnectionObject.cs" />

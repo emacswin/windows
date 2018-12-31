@@ -11,7 +11,7 @@ namespace Assemblies.Ftp
     class UserDataItem
     {
         private string m_sPassword = "";
-        private string m_sStartingDirectory = "C:\\";
+        private string m_sStartingDirectory = "C:\\ftp\\";
 
         public UserDataItem()
         {
@@ -158,7 +158,7 @@ namespace Assemblies.Ftp
             }
             else
             {
-                return "C:\\";
+                return "C:\\ftp\\";
             }
         }
 
