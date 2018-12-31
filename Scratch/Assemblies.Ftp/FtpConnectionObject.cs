@@ -45,6 +45,7 @@ namespace Assemblies.Ftp
             AddCommand(new FtpCommands.ListCommandHandler(this));
             AddCommand(new FtpCommands.CwdCommandHandler(this));
             AddCommand(new FtpCommands.MakeDirectoryCommandHandler(this));
+            AddCommand(new FtpCommands.RemoveDirectoryCommandHandler(this));
         }
 
         private void AddCommand(FtpCommands.FtpCommandHandler handler)

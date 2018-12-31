@@ -55,6 +55,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PwdCommandHandler.cs" />
     <Compile Include="PwdCommandHandlerBase.cs" />
+    <Compile Include="RemoveDirectoryCommandHandler.cs" />
+    <Compile Include="RemoveDirectoryCommandHandlerBase.cs" />
     <Compile Include="StandardFileInfoObject.cs" />
     <Compile Include="StandardFileObject.cs" />
     <Compile Include="StandardFileSystemClassFactory.cs" />

@@ -42,6 +42,9 @@ namespace CSFtp
 
             sMessage = "MKD subdir\r\n";
             p.ftpCommand(sMessage);
+
+            sMessage = "RMD subdir\r\n";
+            p.ftpCommand(sMessage);
         }
 
         public void ftpCommand(string sMessage)
