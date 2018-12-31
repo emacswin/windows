@@ -32,7 +32,7 @@ namespace CSFtp
                 sValue = sMessage.Substring(sCommand.Length + 1);
             }
             //new Assemblies.Ftp.FileSystem.StandardFileSystemClassFactory()
-            FtpConnectionObject ftpConnectionObject = new FtpConnectionObject(null, 0, null);
+            FtpConnectionObject ftpConnectionObject = new FtpConnectionObject(new Assemblies.Ftp.FileSystem.StandardFileSystemClassFactory(), 0, null);
             FtpCommands.FtpCommandHandler handler = ftpConnectionObject.getCommandHandler(sCommand);
             if (handler == null)
             {
