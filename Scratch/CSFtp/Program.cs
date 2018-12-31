@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Assemblies.Ftp;
+using FtpCommands = Assemblies.Ftp.FtpCommands;
 
 namespace CSFtp
 {
@@ -29,6 +31,8 @@ namespace CSFtp
                 sCommand = sMessage.Substring(0, nSpaceIndex).ToUpper();
                 sValue = sMessage.Substring(sCommand.Length + 1);
             }
+
+            System.Collections.Hashtable m_theCommandHashTable = new System.Collections.Hashtable(); ;
 
             FtpCommands.FtpCommandHandler handler = m_theCommandHashTable[sCommand] as FtpCommands.FtpCommandHandler;
 
