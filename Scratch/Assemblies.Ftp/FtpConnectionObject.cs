@@ -49,6 +49,10 @@ namespace Assemblies.Ftp
             AddCommand(new FtpCommands.XMkdCommandHandler(this));
             AddCommand(new FtpCommands.XPwdCommandHandler(this));
             AddCommand(new FtpCommands.XRmdCommandHandler(this));
+
+            AddCommand(new FtpCommands.NlstCommandHandler(this));
+            AddCommand(new FtpCommands.NoopCommandHandler(this));
+
         }
 
         private void AddCommand(FtpCommands.FtpCommandHandler handler)
