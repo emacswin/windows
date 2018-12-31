@@ -31,11 +31,9 @@ namespace CSFtp
                 sCommand = sMessage.Substring(0, nSpaceIndex).ToUpper();
                 sValue = sMessage.Substring(sCommand.Length + 1);
             }
-
-            System.Collections.Hashtable m_theCommandHashTable = new System.Collections.Hashtable(); ;
-
-            FtpCommands.FtpCommandHandler handler = m_theCommandHashTable[sCommand] as FtpCommands.FtpCommandHandler;
-
+            //new Assemblies.Ftp.FileSystem.StandardFileSystemClassFactory()
+            FtpConnectionObject ftpConnectionObject = new FtpConnectionObject(null, 0, null);
+            FtpCommands.FtpCommandHandler handler = ftpConnectionObject.getCommandHandler(sCommand);
             if (handler == null)
             {
                 Console.WriteLine("550 Unknown command\r\n");
