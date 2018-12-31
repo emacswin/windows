@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlloCommandHandler.cs" />
     <Compile Include="CwdCommandHandler.cs" />
     <Compile Include="FtpCommandHandler.cs" />
     <Compile Include="FtpConnectionData.cs" />
@@ -60,6 +61,8 @@
     <Compile Include="QuitCommandHandler.cs" />
     <Compile Include="RemoveDirectoryCommandHandler.cs" />
     <Compile Include="RemoveDirectoryCommandHandlerBase.cs" />
+    <Compile Include="RenameCompleteCommandHandler.cs" />
+    <Compile Include="RenameStartCommandHandler.cs" />
     <Compile Include="SizeCommandHandler.cs" />
     <Compile Include="StandardFileInfoObject.cs" />
     <Compile Include="StandardFileObject.cs" />

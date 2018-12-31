@@ -44,6 +44,7 @@ namespace Assemblies.Ftp
             AddCommand(new FtpCommands.PwdCommandHandler(this));
             AddCommand(new FtpCommands.ListCommandHandler(this));
             AddCommand(new FtpCommands.CwdCommandHandler(this));
+
             AddCommand(new FtpCommands.MakeDirectoryCommandHandler(this));
             AddCommand(new FtpCommands.RemoveDirectoryCommandHandler(this));
             AddCommand(new FtpCommands.XMkdCommandHandler(this));
@@ -54,6 +55,10 @@ namespace Assemblies.Ftp
             AddCommand(new FtpCommands.NoopCommandHandler(this));
             AddCommand(new FtpCommands.QuitCommandHandler(this));
             AddCommand(new FtpCommands.SizeCommandHandler(this));
+            AddCommand(new FtpCommands.AlloCommandHandler(this));
+
+            AddCommand(new FtpCommands.RenameStartCommandHandler(this));
+            AddCommand(new FtpCommands.RenameCompleteCommandHandler(this));
         }
 
         private void AddCommand(FtpCommands.FtpCommandHandler handler)

@@ -40,6 +40,18 @@ namespace CSFtp
             sMessage = "SIZE VTK20096952.msg\r\n";
             p.ftpCommand(sMessage);
 
+            sMessage = "RNFR test.txt\r\n";
+            p.ftpCommand(sMessage);
+
+            sMessage = "RNTO test2.txt\r\n";
+            p.ftpCommand(sMessage);
+
+            sMessage = "RNFR test2.txt\r\n";
+            p.ftpCommand(sMessage);
+
+            sMessage = "RNTO test.txt\r\n";
+            p.ftpCommand(sMessage);
+
             sMessage = "CWD test\r\n";
             p.ftpCommand(sMessage);
 
