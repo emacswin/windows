@@ -38,7 +38,9 @@ namespace CSFtp
             p.ftpCommand(sMessage);
 
             sMessage = "CWD test\r\n";
+            p.ftpCommand(sMessage);
 
+            sMessage = "MKD subdir\r\n";
             p.ftpCommand(sMessage);
         }
 
