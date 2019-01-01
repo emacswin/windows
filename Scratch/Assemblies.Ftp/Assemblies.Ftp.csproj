@@ -69,6 +69,7 @@
     <Compile Include="StandardFileObject.cs" />
     <Compile Include="StandardFileSystemClassFactory.cs" />
     <Compile Include="StandardFileSystemObject.cs" />
+    <Compile Include="TypeCommandHandler.cs" />
     <Compile Include="UserCommandHandler.cs" />
     <Compile Include="UserData.cs" />
     <Compile Include="XMkdCommandHandler.cs" />

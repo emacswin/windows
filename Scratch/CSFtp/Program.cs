@@ -37,6 +37,9 @@ namespace CSFtp
 
             p.ftpCommand(sMessage);
 
+            sMessage = "Type A\r\n";
+            p.ftpCommand(sMessage);
+
             sMessage = "SIZE VTK20096952.msg\r\n";
             p.ftpCommand(sMessage);
 
