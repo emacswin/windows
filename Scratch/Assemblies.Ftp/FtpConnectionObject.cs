@@ -64,7 +64,7 @@ namespace Assemblies.Ftp
             //AddCommand(new FtpCommands.TypeCommandHandler(this));
 
             //AddCommand(new FtpCommands.RetrCommandHandler(this));
-            //AddCommand(new FtpCommands.DeleCommandHandler(this));
+            AddCommand(new FtpCommands.DeleCommandHandler(this));
             //AddCommand(new FtpCommands.StoreCommandHandler(this));
             //AddCommand(new FtpCommands.AppendCommandHandler(this));
         }

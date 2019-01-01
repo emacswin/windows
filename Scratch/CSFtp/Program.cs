@@ -40,6 +40,9 @@ namespace CSFtp
             sMessage = "SIZE VTK20096952.msg\r\n";
             p.ftpCommand(sMessage);
 
+            sMessage = "DELE del.txt\r\n";
+            p.ftpCommand(sMessage);
+
             sMessage = "RNFR test.txt\r\n";
             p.ftpCommand(sMessage);
 

@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="AlloCommandHandler.cs" />
     <Compile Include="CwdCommandHandler.cs" />
+    <Compile Include="DeleCommandHandler.cs" />
     <Compile Include="FtpCommandHandler.cs" />
     <Compile Include="FtpConnectionData.cs" />
     <Compile Include="FtpConnectionObject.cs" />
