@@ -40,6 +40,12 @@ namespace CSFtp
             sMessage = "Type A\r\n";
             p.ftpCommand(sMessage);
 
+            sMessage = "PORT 127,0,0,1,28,233\r\n";
+            p.ftpCommand(sMessage);
+
+            sMessage = "PASV\r\n";
+            p.ftpCommand(sMessage);
+
             sMessage = "SIZE VTK20096952.msg\r\n";
             p.ftpCommand(sMessage);
 
