@@ -46,6 +46,7 @@
     <Compile Include="DownloadCompletedEventArgs.cs" />
     <Compile Include="DownloadProgressChangedEventArgs.cs" />
     <Compile Include="DownloadStatus.cs" />
+    <Compile Include="HttpDownloadClient.cs" />
     <Compile Include="IDownloader.cs" />
     <Compile Include="MultiThreadedWebDownloader.cs" />
     <Compile Include="Program.cs" />
