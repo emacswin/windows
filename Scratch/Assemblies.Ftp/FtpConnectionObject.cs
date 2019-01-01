@@ -65,9 +65,9 @@ namespace Assemblies.Ftp
             AddCommand(new FtpCommands.PortCommandHandler(this));
             AddCommand(new FtpCommands.PasvCommandHandler(this));
 
-            //AddCommand(new FtpCommands.RetrCommandHandler(this));
-            //AddCommand(new FtpCommands.StoreCommandHandler(this));
-            //AddCommand(new FtpCommands.AppendCommandHandler(this));
+            AddCommand(new FtpCommands.RetrCommandHandler(this));
+            AddCommand(new FtpCommands.StoreCommandHandler(this));
+            AddCommand(new FtpCommands.AppendCommandHandler(this));
         }
 
         private void AddCommand(FtpCommands.FtpCommandHandler handler)

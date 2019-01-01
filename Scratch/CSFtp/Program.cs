@@ -43,6 +43,35 @@ namespace CSFtp
             sMessage = "PORT 127,0,0,1,28,233\r\n";
             p.ftpCommand(sMessage);
 
+            sMessage = "APPE test.txt\r\n";
+            p.ftpCommand(sMessage);
+
+            sMessage = "PORT 127,0,0,1,28,233\r\n";
+            p.ftpCommand(sMessage);
+
+            sMessage = "STOR test.txt\r\n";
+            p.ftpCommand(sMessage);
+
+            sMessage = "PORT 127,0,0,1,28,233\r\n";
+            p.ftpCommand(sMessage);
+
+            sMessage = "RETR test.txt\r\n";
+            p.ftpCommand(sMessage);
+
+            /*
+             *  ### PORT 127,0,0,1,26,117
+                ### NLST
+
+                ### PORT 127,0,0,1,28,233
+                ### APPE test123.txt
+
+                ### PORT 127,0,0,1,28,228
+                ### STOR test123.txt
+
+                ### PORT 127,0,0,1,26,126
+                ### RETR test.txt
+             */
+
             sMessage = "PASV\r\n";
             p.ftpCommand(sMessage);
 

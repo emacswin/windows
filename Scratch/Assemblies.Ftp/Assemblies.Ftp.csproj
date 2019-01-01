@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AlloCommandHandler.cs" />
+    <Compile Include="AppendCommandHandler.cs" />
     <Compile Include="CwdCommandHandler.cs" />
     <Compile Include="DeleCommandHandler.cs" />
     <Compile Include="FtpCommandHandler.cs" />
@@ -66,11 +67,13 @@
     <Compile Include="RemoveDirectoryCommandHandlerBase.cs" />
     <Compile Include="RenameCompleteCommandHandler.cs" />
     <Compile Include="RenameStartCommandHandler.cs" />
+    <Compile Include="RetrCommandHandler.cs" />
     <Compile Include="SizeCommandHandler.cs" />
     <Compile Include="StandardFileInfoObject.cs" />
     <Compile Include="StandardFileObject.cs" />
     <Compile Include="StandardFileSystemClassFactory.cs" />
     <Compile Include="StandardFileSystemObject.cs" />
+    <Compile Include="StoreCommandHandler.cs" />
     <Compile Include="TypeCommandHandler.cs" />
     <Compile Include="UserCommandHandler.cs" />
     <Compile Include="UserData.cs" />
