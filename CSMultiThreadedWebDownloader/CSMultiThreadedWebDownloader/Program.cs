@@ -32,6 +32,8 @@ namespace CSMultiThreadedWebDownloader
             downloader = new MultiThreadedWebDownloader(url);
 
             downloader.Proxy = proxy;
+
+
         }
     }
 }
